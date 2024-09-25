@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Task 3.1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <style>
+         .toplayout {
+	position: absolute; /* Абсолютное позиционирование */
+        left: 0; /* Положение левого края */
+        right: 0;
+        top: 0; /* Положение верхнего края */
+        height: 80px;
+        background: green; /* Цвет фона */
+        color: black; /* Цвет текста */
+        font-size: 150%;
+	}
+<body>
+   <main>
+  	<div class="toplayout">
+	Header
+	</div>
+   </main>
+</body>
+</html>
