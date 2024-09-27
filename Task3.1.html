@@ -24,27 +24,29 @@
 	}
 	.redcolumn{
 	position: absolute;
-        padding: 5px;
-	top: 40px;
-	margin-left: 360px;
+        flex: 30% 1 0;	
+        padding: 5px; 
+        margin-left: 350px;
+	top: 40px;	
         bottom: 0px;
-	width: 160px;
+	max-width: 160px;
 	background: red;
 	}
-	.ul{
+	ul{
 	font-size: 100%;
 	color: white;
 	font-family: Arial;
 	list-style-type: none;
 	}
 	.textblock{
-	position: absolute;
+	position: inline-block;
 	font-size: 90%;
 	font-family: Arial;
 	text-align: justify;
-	top: 40px;
-	left: 550px;
+	margin-top: 40px;
+	margin-left: 550px;
         max-width: 500px;
+	padding: 10px;
 	}
 	.footerlayout{
 	position: absolute;
@@ -61,9 +63,22 @@
 	font-family: Arial;
 	text-align: center;
 	}
-	.greentext{
-	background: green; color: white;
+	mark{
+	background-color: green; 
+        color: white;
+	padding: 0.1em 0.1em;
+        box-shadow: 0.5em 0 0, 0.5em 0 0;
+        box-decoration-break: clone;    
 	}
+ 
+	@media (max-width: 800px) {
+	.redcolumn{
+	margin-left: 0px;
+	}
+	.textblock{
+	margin-left: 170px;
+	}
+}
 </style>
 </head>
 <body>
@@ -74,17 +89,17 @@
 		</div>
         </div>
 	<div class="redcolumn">	
-		<ul class="ul">
+		<ul>
 		<li style="margin-bottom: 1em;"><u>Main page</u><li>
 		<li style="margin-bottom: 1em;"><u>Secondary page</u></li>
 		<li style="margin-bottom: 1em;"><u>Some other page</u></li>
-		<li style="margin-bottom: 1em; background: green; border-radius: 2px;"><u>More pages to the god of pages</u></li>
+		<li style="margin-bottom: 1em; background: green; border-radius: 3px;"><u>More pages to the god of pages</u></li>
 		<li style="margin-bottom: 1em;"><u>The last page</u></li>
 		</ul>
 	</div>
 	<div class="textblock">
 	    <p>
-		<b style="color:red">L</b>orem ipsum dolor sit amet, consectetur adipisicing elit. Ratione eos iusto provident nihil, laboriosam esse ab minima est, in sit enim officia sunt <mark style="background: green; color: white;;">sapiente vitae illo, dolorem! Sint debitis nesciunt ducimus ab magnam necessitatibus asperiores enim voluptate, dolores reiciendis iure. Nisi odio in consectetur inventore enim quasi ipsam velit eius eligendi quis eaque iusto suscipit quod accusamu</mark>s temporibus molestiae, facere, laborum quos, rem repellat earum error expedita consequatur. Illum eos, debitis distinctio porro maiores velit quia accusantium quae voluptatem quidem minima, facilis impedit ut. Odio praesentium ea itaque voluptates numquam consectetur temporibus facilis qui magni velit laborum dicta earum beatae laudantium voluptatem sed deleniti dolores alias atque, repudiandae unde. Mollitia molestiae dolore tenetur, rem illum eveniet ratione, laboriosam repudiandae inventore expedita veniam asperiores non excepturi suscipit quod corrupti. Laborum debitis eveniet maxime vite  aliquid nulla sit fugit voluptatem, soluta laudantium ad voluptatum in vel non sequi labore. Culpa autem, corporis, nobis cupiditate laboriosam numquam, itaque natus aperiam ut deserunt adipisci magni debitis fugit eum temporibus voluptatum ipsam rem commodi. Autem aliquam dolorem earum. Beatae reiciendis incidunt molestiae soluta earum, expedita odit tempora vel eveniet provident ab aut vero dolor assumenda, minus quia saepe nulla a id. Quia corrupti, non velit!
+		<b style="color:red">L</b>orem ipsum dolor sit amet, consectetur adipisicing elit. Ratione eos iusto provident nihil, laboriosam esse ab minima est, in sit enim officia sunt <mark>sapiente vitae illo, dolorem! Sint debitis nesciunt ducimus ab magnam necessitatibus asperiores enim voluptate, dolores reiciendis iure. Nisi odio in consectetur inventore enim quasi ipsam velit eius eligendi quis eaque iusto suscipit quod accusamu</mark>s temporibus molestiae, facere, laborum quos, rem repellat earum error expedita consequatur. Illum eos, debitis distinctio porro maiores velit quia accusantium quae voluptatem quidem minima, facilis impedit ut. Odio praesentium ea itaque voluptates numquam consectetur temporibus facilis qui magni velit laborum dicta earum beatae laudantium voluptatem sed deleniti dolores alias atque, repudiandae unde. Mollitia molestiae dolore tenetur, rem illum eveniet ratione, laboriosam repudiandae inventore expedita veniam asperiores non excepturi suscipit quod corrupti. Laborum debitis eveniet maxime vite  aliquid nulla sit fugit voluptatem, soluta laudantium ad voluptatum in vel non sequi labore. Culpa autem, corporis, nobis cupiditate laboriosam numquam, itaque natus aperiam ut deserunt adipisci magni debitis fugit eum temporibus voluptatum ipsam rem commodi. Autem aliquam dolorem earum. Beatae reiciendis incidunt molestiae soluta earum, expedita odit tempora vel eveniet provident ab aut vero dolor assumenda, minus quia saepe nulla a id. Quia corrupti, non velit!
 	    </p>
 	</div>
 	<div class="footerlayout">
